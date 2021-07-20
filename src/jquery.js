@@ -73,7 +73,7 @@ jQuery.fn=jQuery.prototype={
     },
     children(){
         let array=[]
-        this.each(node=>{array.push(...node.children)})
+        this.each(node=>{array.push(...node.children)}) // ...的意思是把node.children拆开第一个放第一个第二个放第二个
         return jQuery(array)
     },
     print(){
